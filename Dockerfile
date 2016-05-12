@@ -23,6 +23,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 
 EXPOSE 80 443
 
-# COPY cc-entrypoint.sh /usr/local/bin/
+COPY cc-entrypoint.sh /usr/local/bin/
 
-ENTRYPOINT cc-entrypoint.sh
+#ENTRYPOINT cc-entrypoint.sh
