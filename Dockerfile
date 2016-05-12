@@ -22,6 +22,6 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 
 EXPOSE 80 443
 
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY cc-entrypoint.sh /usr/local/bin/
 
-#ENTRYPOINT docker-entrypoint.sh
+ENTRYPOINT cc-entrypoint.sh
