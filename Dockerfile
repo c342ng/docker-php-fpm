@@ -27,4 +27,4 @@ COPY default.conf /etc/nginx/con.d/
 COPY cc-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/cc-entrypoint.sh
 
-#ENTRYPOINT cc-entrypoint.sh
+ENTRYPOINT cc-entrypoint.sh

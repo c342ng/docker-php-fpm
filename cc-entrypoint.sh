@@ -1,3 +1,3 @@
 #!/bin/bash
-php-fpm -D
 nginx
+php-fpm -D
