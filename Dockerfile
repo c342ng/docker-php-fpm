@@ -27,4 +27,4 @@ COPY cc-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/cc-entrypoint.sh
 EXPOSE 80 443
 
-ENTRYPOINT cc-entrypoint.sh
+#ENTRYPOINT cc-entrypoint.sh
