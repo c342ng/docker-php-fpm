@@ -1,3 +1,4 @@
 #!/bin/bash
-nginx
-php-fpm -D
+set -e
+nginx &
+php-fpm -D &
