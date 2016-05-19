@@ -24,7 +24,6 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 573BFD6B3D8FBC64107
 
 
 COPY cc-entrypoint.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/cc-entrypoint.sh
-EXPOSE 80 443
+ENTRYPOINT ["/usr/local/bin/cc-entrypoint.sh"]
 
-#ENTRYPOINT cc-entrypoint.sh
+EXPOSE 80 443
